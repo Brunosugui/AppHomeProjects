@@ -17,9 +17,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = (Button) findViewById(R.id.button);
-        textView = (TextView) findViewById(R.id.textView2);
-        testStore = (TextView) findViewById(R.id.teststore);
         mqtt = new MQTT(this);
         fileIO = new FileIO(this);
 
